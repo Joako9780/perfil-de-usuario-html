@@ -4,48 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil de usuario con biografía y detalles de contacto.">
     <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h2>Publicaciones</h2>
+        <h1>Perfil de Usuario</h1>
+        <img class="profile-img" src="images/default-avatar-icon-of-social-media-user-vector.jpg"
+            alt="Avatar del usuario" title="Avatar del usuario" width="100" height="100">
+        <aside class="user-info">
+            <p>[Nombre de usuario]</p>
+            <p><i>Desarrollador Web Junior</i></p>
     </header>
-    <h1>Perfil de Usuario</h1>
     <main>
-
         <section>
-            <h3>Título de la publicación</h3>
-            <p>Contenido de la publicación.</p>
-            <article>
-                <h2>Biografía del usuario</h2>
-                <p>Biografía del usuario</p>
+            <h2>Publicaciones</h2>
+            <article class="posts">
+                <h3>Mis repositorios HTML</h3>
+                <p><a href="https://github.com/Joako9780?tab=repositories">Aquí</a> puedes encontrar
+                    mis proyectos y repositorios relacionados con HTML.</p>
+            </article>
+            <h2>Biografía del usuario</h2>
+            <article class="bio">
+                <h3>Sobre mí</h3>
+                <p>Soy desarrollador web junior con pasión por transformar
+                    ideas en páginas HTML limpias, accesibles y funcionales.
+                    Me gusta enfocarme en la estructura semántica, el diseño
+                    responsivo y en mantener el código simple pero escalable.
+                </p>
+                <h3>Qué hago</h3>
+                <pre>
+Desarrollo páginas y prototipos en HTML5.
+Experimentos con CSS3 y un poco de JavaScript.
+Optimización de interfaces para distintos dispositivos.</pre>
+                <h3>Intereses</h3>
+                <p>Cuando no estoy maqueteando, me encanta aprender sobre diseño UX/UI,
+                    explorar nuevas tendencias web y pulir mis proyectos personales.
+                </p>
+                <h3>Meta actual</h3>
+                <p>Convertirme en desarrollador/a front-end completo, combinando
+                    código limpio con experiencias de usuario fluidas.
+                </p>
             </article>
         </section>
-
-        <table border="1">
-            <caption>Detalles de contacto</caption>
-            <thead>
-                <tr>
-                    <th>email</th>
-                    <th>teléfono</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>user@example.com</td>
-                    <td>261123234</td>
-                </tr>
-                <tr>
-                    <td>user2@example.com</td>
-                    <td>251238438</td>
-                </tr>
-            </tbody>
-        </table>
-        <footer>
-            <p>Pie de página del perfil.</p>
-        </footer>
+        <div class="contact-details">
+            <table>
+                <caption><b>Detalles de contacto</b></caption>
+                <thead>
+                    <tr>
+                        <th>e-mail</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>user@example.com</td>
+                        <td>261123234</td>
+                    </tr>
+                    <tr>
+                        <td>user2@example.com</td>
+                        <td>251238438</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>Actualizar Perfil</h2>
+        <div class="update-profile">
+            <form>
+                <label for="name">Nombre:</label><br>
+                <input type="text" name="name" placeholder="Nombre completo" required><br><br>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" name="email" placeholder="Correo electrónico" required><br><br>
+                <label for="phone">Número de teléfono:</label><br>
+                <input type="tel" name="phone" placeholder="Número de teléfono" required><br><br>
+                <label for="bio">Biografía:</label><br>
+                <textarea name="bio" placeholder="Escribe tu biografía aqui..." rows="4" cols="50"
+                    required></textarea><br><br>
+                <input class="profile-upt" type="submit" value="Actualizar Perfil">
+            </form>
+        </div>
     </main>
+    <footer>
+        <p>Pie de página del perfil.</p>
+    </footer>
 </body>
-
 </html>
